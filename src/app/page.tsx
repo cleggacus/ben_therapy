@@ -13,7 +13,11 @@ import ContactForm from '../components/contact';
 import Navbar, { NavbarElements } from '../components/navbar';
 
 export default function Home() {
-    const refs = Array.from({ length: 5 }, () => useRef<HTMLDivElement>(null));
+    const homeRef = useRef<HTMLDivElement>(null);
+    const aboutMeRef = useRef<HTMLDivElement>(null);
+    const therapyRef = useRef<HTMLDivElement>(null);
+    const faqRef = useRef<HTMLDivElement>(null);
+    const contactRef = useRef<HTMLDivElement>(null);
 
     const [elements, setElements] = useState<NavbarElements>({
         home: undefined,
@@ -25,22 +29,22 @@ export default function Home() {
 
     useEffect(() => {
         setElements({
-            home:       refs[0].current ?? undefined,
-            about_me:   refs[1].current ?? undefined,
-            therapy:    refs[2].current ?? undefined,
-            faq:        refs[3].current ?? undefined,
-            contact:    refs[4].current ?? undefined,
+            home: homeRef.current ?? undefined,
+            about_me: aboutMeRef.current ?? undefined,
+            therapy: therapyRef.current ?? undefined,
+            faq: faqRef.current ?? undefined,
+            contact: contactRef.current ?? undefined,
         })
-    }, refs)
+    }, [homeRef, aboutMeRef, therapyRef, faqRef, contactRef])
 
     return <>
         <div className={styles.page}>
-            <Cover ref={refs[0]}/>
+            <Cover ref={homeRef}/>
             <Seg1/>
-            <Seg2 ref={refs[1]}/>
-            <Seg3 ref={refs[2]}/>
-            <Seg4 ref={refs[3]}/>
-            <Seg5 ref={refs[4]}/>
+            <Seg2 ref={aboutMeRef}/>
+            <Seg3 ref={therapyRef}/>
+            <Seg4 ref={faqRef}/>
+            <Seg5 ref={contactRef}/>
         </div>
         <Navbar elements={elements}/>
     </>
@@ -134,3 +138,9 @@ const Seg5 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         </div>
     </div>
 })
+
+Seg1.displayName = "Seg1";
+Seg2.displayName = "Seg2";
+Seg3.displayName = "Seg3";
+Seg4.displayName = "Seg4";
+Seg5.displayName = "Seg5";

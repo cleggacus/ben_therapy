@@ -44,6 +44,8 @@ const Cover = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     </div>
 });
 
+Cover.displayName = "Cover";
+
 export default Cover;
 
 

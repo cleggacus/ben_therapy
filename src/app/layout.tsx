@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import content from "../../content";
-import Navbar from "../components/navbar";
 
 type Props = Readonly<{
     children: React.ReactNode;
