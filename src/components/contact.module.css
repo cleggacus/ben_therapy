@@ -1,0 +1,33 @@
+.form {
+    width: 100%;
+    background-color: rgb(var(--bg-4));
+    color: rgb(var(--fg-4));
+    padding: 2rem;
+}
+
+.form h1 {
+    margin: 0 0 1.5rem 0;
+}
+
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+}
+
+.form button {
+    background-color: rgb(var(--bg-3));
+    color: rgb(var(--fg-3));
+    margin: 1.5rem 0;
+}
+
+.form input,
+.form textarea {
+    background-color: rgb(var(--bg-5));
+    color: rgb(var(--fg-5));
+    margin: 0.5rem 0;
+}
+
+.form textarea {
+    resize: none;
+}

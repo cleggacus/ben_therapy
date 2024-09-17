@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(var(--bg-3));
+    color: rgb(var(--fg-3));
+}
+
+.container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 105px 0 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .content .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+}
+
+.container .content h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.container .content p {
+    font-size: 1.3em;
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6) grayscale(0.6) blur(8px);
+}
