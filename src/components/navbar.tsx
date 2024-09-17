@@ -1,5 +1,9 @@
+"use client";
+
 import styles from "./navbar.module.css"
 import content from "../../content";
+import { FiMenu } from "react-icons/fi";
+import { useState } from "react";
 
 export type NavbarElements = {
     home?: Element,
@@ -14,11 +18,13 @@ type Props = {
 }
 
 export default function Navbar(props: Props) {
+    const [open, setOpen] = useState(false);
     const scrollTo = (element?: Element) => {
         if(!element) return;
 
         const y = element.getBoundingClientRect().top + window.scrollY - 105;
         window.scrollTo({top: y, behavior: 'smooth'});
+        setOpen(false);
     }
 
     return <div className={`${styles.container}`}>
@@ -26,7 +32,9 @@ export default function Navbar(props: Props) {
             <h1>{content.navbar.title}</h1>
         </div>
 
-        <ul>
+        <FiMenu className={styles.icon} onClick={() => setOpen(open => !open)}/>
+
+        <ul className={open ? styles.open : ""}>
             <li onClick={() => scrollTo(props.elements.home)}>Home</li>
             <li onClick={() => scrollTo(props.elements.about_me)}>About Me</li>
             <li onClick={() => scrollTo(props.elements.therapy)}>Therapy</li>

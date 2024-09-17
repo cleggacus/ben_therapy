@@ -21,6 +21,7 @@
     height: 100%;
 }
 
+
 .page .seg1 .left img {
     outline-style: double;
     outline-width: 1em;
@@ -69,6 +70,7 @@
 .page .seg2,
 .page .seg3 {
     width: 100%;
+    padding: 3rem;
 }
 
 .page .seg2 {
@@ -103,7 +105,7 @@
 
 .page .seg2 .left p,
 .page .seg3 .right p {
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0 ;
     font-size: 1em;
 }
 
@@ -148,7 +150,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 3rem;
 }
 
 .page .seg4 .inner h1 {
@@ -165,5 +167,79 @@
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .page .seg2,
+    .page .seg3 {
+        padding: 1rem !important;
+    }
+
+    .page .seg2 .inner {
+        flex-direction: column;
+    }
+
+    .page .seg3 .inner {
+        flex-direction: column-reverse;
+    }
+
+    .page .seg2 .inner,
+    .page .seg3 .inner {
+        padding: 0 2rem;
+    }
+
+    .page .seg2 .right,
+    .page .seg3 .left {
+        padding: 3rem 1rem;
+        width: 100%;
+    }
+
+    .page .seg2 .right img,
+    .page .seg3 .left img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .page .seg2 .left h1,
+    .page .seg3 .right h1 {
+        margin: 2rem auto;
+    }
+
+    .page .seg4 .inner {
+        padding: 2rem;
+    }
+
+    .page .seg5 .inner {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .page .seg1 {
+        height: auto;
+    }
+
+    .page .seg1 .left {
+        display: none;
+    }
+
+    .page .seg1 .right {
+        padding: 2rem!important;
+        justify-content: center;
+    }
+
+    .page .seg1 .right .inner {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .page .seg2 .right,
+    .page .seg3 .left {
+        display: none;
+    }
+
+    .page .seg1 .right .inner h1 {
+        font-size: 1.5em;
+    }
 }

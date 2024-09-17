@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
         },
     });
 
+    
     const currentDateTime = new Date().toLocaleString("en-GB", {
         day: '2-digit', 
         month: '2-digit', 
@@ -40,6 +41,9 @@ export async function POST(request: NextRequest) {
     <p>${message.replace(/\n/g, "<br>")}</p>
         `
     }
+
+    console.log(mailOptions);
+
 
     const sendMailPromise = () =>
         new Promise<string>((resolve, reject) => {
