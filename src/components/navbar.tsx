@@ -32,6 +32,7 @@ export default function Navbar(props: Props) {
             <h1>{content.navbar.title}</h1>
         </div>
 
+
         <FiMenu className={styles.icon} onClick={() => setOpen(open => !open)}/>
 
         <ul className={open ? styles.open : ""}>

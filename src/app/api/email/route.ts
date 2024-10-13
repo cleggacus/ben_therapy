@@ -42,15 +42,13 @@ export async function POST(request: NextRequest) {
         `
     }
 
-    console.log(mailOptions);
-
-
     const sendMailPromise = () =>
         new Promise<string>((resolve, reject) => {
             transport.sendMail(mailOptions, function (err) {
                 if (!err) {
                     resolve('Email sent');
                 } else {
+                    err.cause
                     reject(err.message);
                 }
             });

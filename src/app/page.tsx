@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import portraitImage from "../images/portrait.jpg";
 import aboutImage from "../images/about.jpg";
 import therapyImage from "../images/therapy.jpg";
+import logoImage from "../images/logo.png";
 import Cover from '../components/cover';
 import FAQItem from '../components/faq';
 import content from "../../content";
@@ -45,11 +46,37 @@ export default function Home() {
             <Seg3 ref={therapyRef}/>
             <Seg4 ref={faqRef}/>
             <Seg5 ref={contactRef}/>
+            <Footer></Footer>
         </div>
         <Navbar elements={elements}/>
     </>
 }
 
+const Footer = () => {
+    return <div className={styles.footer}>
+        <div>
+            <code>
+                {"Tel:   07506 767178\n"}
+                {"Email: thing@thing.thing"}
+            </code>
+        </div>
+
+        <div>
+            <h2>Benjamin Clegg Therapy</h2>
+        </div>
+
+        <div>
+            <div className={styles.logo}>
+            <a href="https://ncps.com/counsellors/NCS24-00946">
+                <Image
+                    src={logoImage}
+                    alt="Accreditation Logo"
+                ></Image>
+            </a>
+            </div>
+        </div>
+    </div>
+}
 
 const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     return <div className={styles.seg1} ref={ref}>
