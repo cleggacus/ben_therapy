@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { ForwardedRef, forwardRef, useEffect, useRef, useState } from 'react';
 import styles from "./page.module.css";
-import aboutImage from "../images/about.jpg";
+import portrait from "../images/portrait.jpg";
 import therapyImage from "../images/therapy.jpg";
 import logoImage from "../images/logo.png";
 import Cover from '../components/cover';
@@ -80,7 +80,7 @@ const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
 
         <div className={styles.content}>
             <Image
-                src={aboutImage}
+                src={portrait}
                 alt="picture of therapist"
             ></Image>
 
