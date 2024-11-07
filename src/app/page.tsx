@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import { ForwardedRef, forwardRef, useEffect, useRef, useState } from 'react';
 import styles from "./page.module.css";
-import portraitImage from "../images/portrait.jpg";
 import aboutImage from "../images/about.jpg";
 import therapyImage from "../images/therapy.jpg";
 import logoImage from "../images/logo.png";
@@ -49,13 +48,13 @@ export default function Home() {
             <Seg1 ref={aboutMeRef}/>
             <Seperator />
 
-            <Seg2 ref={aboutMeRef}/>
+            <Seg2 ref={therapyRef}/>
             <Seperator />
 
-            <Seg4 ref={aboutMeRef}/>
+            <Seg4 ref={faqRef}/>
             <Seperator />
 
-            <Seg5 ref={aboutMeRef}/>
+            <Seg5 ref={contactRef}/>
 
             <Footer/>
         </div>
@@ -76,7 +75,7 @@ function Intro() {
 }
 
 const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <Section className={styles.seg1}>
+    return <Section ref={ref} className={styles.seg1}>
         <h1>About Me</h1>
 
         <div className={styles.content}>
@@ -96,8 +95,10 @@ const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     </Section>
 })
 
+Seg1.displayName = 'Seg1';
+
 const Seg2 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <Section className={styles.seg2}>
+    return <Section ref={ref} className={styles.seg2}>
         <h1>Why Therapy</h1>
 
         <div className={styles.content}>
@@ -117,6 +118,8 @@ const Seg2 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     </Section>
 })
 
+Seg2.displayName = 'Seg2';
+
 const Seg4 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     return <Section className={styles.seg4} ref={ref}>
         <h1>Frequently Asked Questions</h1>
@@ -131,12 +134,15 @@ const Seg4 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     </Section>
 })
 
+Seg4.displayName = 'Seg4';
 
 const Seg5 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
     return <Section className={styles.seg5} ref={ref}>
         <ContactForm />
     </Section>
 })
+
+Seg5.displayName = 'Seg5';
 
 const Footer = () => {
     return <div className={styles.footer}>
@@ -164,3 +170,4 @@ const Footer = () => {
     </div>
 }
 
+Footer.displayName = 'Footer';

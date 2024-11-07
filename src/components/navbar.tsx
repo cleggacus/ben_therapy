@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./navbar.module.css"
-import content from "../../content";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 

@@ -7,10 +7,12 @@ export type SectionProps = {
 }
 
 const Section = forwardRef((props: SectionProps, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={`${styles.container} ${props.className ?? ""}`}>
+    return <div ref={ref} className={`${styles.container} ${props.className ?? ""}`}>
         { props.children }
     </div>
 });
+
+Section.displayName = "Section";
 
 export default Section;
 
