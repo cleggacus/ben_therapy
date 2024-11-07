@@ -33,15 +33,15 @@
 
 .page .footer code {
     white-space: pre-wrap;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .page .footer img {
-    height: 5rem;
+    height: 10rem;
+    width: auto;
 }
 
 .page .footer .logo {
-    padding: 0 0.5rem;
 }
 
 @media only screen and (max-width: 900px) {

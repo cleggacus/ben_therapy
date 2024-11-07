@@ -154,10 +154,6 @@ const Footer = () => {
         </div>
 
         <div>
-            <h2>Benjamin Clegg Therapy</h2>
-        </div>
-
-        <div>
             <div className={styles.logo}>
             <a href="https://ncps.com/counsellors/NCS24-00946">
                 <Image
