@@ -36,10 +36,8 @@ const Cover = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         />
 
         <div className={styles.content}>
-            <div className={styles.inner}>
-                <h1>{content.cover.title}</h1>
-                <p>{content.cover.description.replace(/\n/g, "<br>")}</p>
-            </div>
+            <h1>{content.cover.title}</h1>
+            <button>Free Consultation</button>
         </div>
     </div>
 });

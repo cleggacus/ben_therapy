@@ -5,8 +5,7 @@ export default {
         title: "Benjamin Clegg Therapy"
     },
     cover: {
-        title: "Start your therapy journy today!",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a rutrum lorem. Nunc finibus pretium elementum. Duis vestibulum aliquet diam, fringilla feugiat velit consequat scelerisque."
+        title: "Benjamin Clegg Therapy",
     },
     book_session: {
         title: "Therapy for people struggling with X, Y and Z",
