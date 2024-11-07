@@ -5,34 +5,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 30px 50px;
-    background-color: rgb(var(--bg-1));
-    color: rgb(var(--fg-1));
+    padding: 20px 30px;
+    background-color: rgb(var(--bg-nav));
+    color: rgb(var(--fg-nav));
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container .left {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.container .left h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
 .container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
     list-style-type: none;
+    background-color: rgb(var(--bg-nav));
+    padding: 0;
+    margin: 0;
 }
 
 .container ul li {
     cursor: pointer;
     font-size: 1em;
-    font-weight: bold;
     float: left;
-    padding-left: 50px;
 }
 
 .container .icon {
@@ -51,14 +45,10 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     .container {
         justify-content: right;
         padding: 20px 30px;
-    }
-
-    .container .left {
-        display: block;
     }
 
     .container .icon {
@@ -72,12 +62,14 @@
     }
 
     .container ul {
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+        flex-direction: column;
         position: fixed;
         opacity: 0;
         top: 80px;
         right: 0;
-        background-color: rgb(var(--bg-1));
-        color: rgb(var(--fg-1));
+        padding: 2rem;
+        gap: 1.5rem;
         transition: opacity ease 0.5s;
         pointer-events: none;
         user-select: none;
@@ -85,6 +77,5 @@
 
     .container li {
         float: none !important;
-        padding: 20px 50px;
     }
 }

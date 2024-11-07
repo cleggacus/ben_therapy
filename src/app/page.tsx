@@ -12,6 +12,7 @@ import FAQItem from '../components/faq';
 import content from "../../content";
 import ContactForm from '../components/contact';
 import Navbar, { NavbarElements } from '../components/navbar';
+import Section, { Seperator } from '../components/section';
 
 export default function Home() {
     const homeRef = useRef<HTMLDivElement>(null);
@@ -41,16 +42,101 @@ export default function Home() {
     return <>
         <div className={styles.page}>
             <Cover ref={homeRef}/>
-            <Seg1/>
+
+            <Intro/>
+            <Seperator />
+
+            <Seg1 ref={aboutMeRef}/>
+            <Seperator />
+
             <Seg2 ref={aboutMeRef}/>
-            <Seg3 ref={therapyRef}/>
-            <Seg4 ref={faqRef}/>
-            <Seg5 ref={contactRef}/>
-            <Footer></Footer>
+            <Seperator />
+
+            <Seg4 ref={aboutMeRef}/>
+            <Seperator />
+
+            <Seg5 ref={aboutMeRef}/>
+
+            <Footer/>
         </div>
         <Navbar elements={elements}/>
     </>
 }
+
+
+function Intro() {
+    return <Section className={styles.intro}>
+        <h1>{content.intro.title}</h1>
+        {
+            content.intro.description.split("\n").map((line, i) =>
+                <p key={i}>{line}</p>
+            )
+        }
+    </Section>
+}
+
+const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+    return <Section className={styles.seg1}>
+        <h1>About Me</h1>
+
+        <div className={styles.content}>
+            <Image
+                src={aboutImage}
+                alt="picture of therapist"
+            ></Image>
+
+            <div>
+            {
+                content.about_me.split("\n").map((line, i) =>
+                    <p key={i}>{line}</p>
+                )
+            }
+            </div>
+        </div>
+    </Section>
+})
+
+const Seg2 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+    return <Section className={styles.seg2}>
+        <h1>Why Therapy</h1>
+
+        <div className={styles.content}>
+            <div>
+            {
+                content.about_me.split("\n").map((line, i) =>
+                    <p key={i}>{line}</p>
+                )
+            }
+            </div>
+            
+            <Image
+                src={therapyImage}
+                alt="picture of therapist"
+            ></Image>
+        </div>
+    </Section>
+})
+
+const Seg4 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+    return <Section className={styles.seg4} ref={ref}>
+        <h1>Frequently Asked Questions</h1>
+        {
+            content.faq.map((item, i) => 
+                <FAQItem
+                    key={i}
+                    {...item}
+                />
+            )
+        }
+    </Section>
+})
+
+
+const Seg5 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+    return <Section className={styles.seg5} ref={ref}>
+        <ContactForm />
+    </Section>
+})
 
 const Footer = () => {
     return <div className={styles.footer}>
@@ -78,96 +164,3 @@ const Footer = () => {
     </div>
 }
 
-const Seg1 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={styles.seg1} ref={ref}>
-        <div className={styles.left}>
-            <Image
-                src={portraitImage}
-                alt="picture of therapist"
-            ></Image>
-        </div>
-
-        <div className={styles.right}>
-            <div className={styles.inner}>
-                <h1>{content.book_session.title}</h1>
-                <p>{content.book_session.description.replace(/\n/g, "<br>")}</p>
-                <button>Book a session</button>
-            </div>
-        </div>
-    </div>
-})
-
-const Seg2 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={styles.seg2} ref={ref}>
-        <div className={styles.inner}>
-            <div className={styles.left}>
-                <h1>About Me</h1>
-                {
-                    content.about_me.split("\n\n").map((line, i) =>
-                        <p key={i}>{line.replace(/\n/g, "<br>")}</p>
-                    )
-                }
-            </div>
-
-            <div className={styles.right}>
-                <Image
-                    src={aboutImage}
-                    alt="picture of therapist"
-                ></Image>
-            </div>
-        </div>
-    </div>
-})
-
-const Seg3 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={styles.seg3} ref={ref}>
-        <div className={styles.inner}>
-            <div className={styles.left}>
-                <Image
-                    src={therapyImage}
-                    alt="picture of therapist"
-                ></Image>
-            </div>
-
-            <div className={styles.right}>
-                <h1>Why therapy</h1>
-                {
-                    content.why_therapy.split("\n\n").map((line, i) =>
-                        <p key={i}>{line.replace(/\n/g, "<br>")}</p>
-                    )
-                }
-            </div>
-        </div>
-    </div>
-})
-
-const Seg4 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={styles.seg4} ref={ref}>
-        <div className={styles.inner}>
-            <h1>Frequently Asked Questions</h1>
-            {
-                content.faq.map((item, i) => 
-                    <FAQItem
-                        key={i}
-                        {...item}
-                    />
-                )
-            }
-        </div>
-    </div>
-})
-
-
-const Seg5 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
-    return <div className={styles.seg5} ref={ref}>
-        <div className={styles.inner}>
-            <ContactForm />
-        </div>
-    </div>
-})
-
-Seg1.displayName = "Seg1";
-Seg2.displayName = "Seg2";
-Seg3.displayName = "Seg3";
-Seg4.displayName = "Seg4";
-Seg5.displayName = "Seg5";

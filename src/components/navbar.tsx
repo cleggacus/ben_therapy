@@ -28,19 +28,14 @@ export default function Navbar(props: Props) {
     }
 
     return <div className={`${styles.container}`}>
-        <div className={styles.left}>
-            <h1>{content.navbar.title}</h1>
-        </div>
-
-
         <FiMenu className={styles.icon} onClick={() => setOpen(open => !open)}/>
 
         <ul className={open ? styles.open : ""}>
-            <li onClick={() => scrollTo(props.elements.home)}>Home</li>
-            <li onClick={() => scrollTo(props.elements.about_me)}>About Me</li>
-            <li onClick={() => scrollTo(props.elements.therapy)}>Therapy</li>
+            <li onClick={() => scrollTo(props.elements.home)}>HOME</li>
+            <li onClick={() => scrollTo(props.elements.about_me)}>ABOUT ME</li>
+            <li onClick={() => scrollTo(props.elements.therapy)}>THERAPY</li>
             <li onClick={() => scrollTo(props.elements.faq)}>FAQ</li>
-            <li onClick={() => scrollTo(props.elements.contact)}>Contact</li>
+            <li onClick={() => scrollTo(props.elements.contact)}>CONTACT</li>
         </ul>
     </div>
 }

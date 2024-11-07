@@ -17,8 +17,8 @@ export default function FAQItem(props: FAQProps) {
         <div className={styles.answer}>
             <div className={styles.inner}>
                 {
-                    props.answer.split("\n\n").map((line, i) =>
-                        <p key={i}>{line.replace(/\n/g, "<br>")}</p>
+                    props.answer.split("\n").map((line, i) =>
+                        <p key={i}>{line}</p>
                     )
                 }
             </div>
