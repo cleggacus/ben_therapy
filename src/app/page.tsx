@@ -40,10 +40,10 @@ export default function Home() {
 
     return <>
         <div className={styles.page}>
-            <Cover ref={homeRef}/>
+            <Cover ref={homeRef} contact={elements.contact}/>
 
             <Intro/>
-            <Seperator />
+            <Seperator/>
 
             <Seg1 ref={aboutMeRef}/>
             <Seperator />
@@ -55,6 +55,7 @@ export default function Home() {
             <Seperator />
 
             <Seg5 ref={contactRef}/>
+            <Seperator />
 
             <Footer/>
         </div>
@@ -145,7 +146,7 @@ const Seg5 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
 Seg5.displayName = 'Seg5';
 
 const Footer = () => {
-    return <div className={styles.footer}>
+    return <Section className={styles.footer}>
         <div>
             <code>
                 {"Tel:   07506 767178\n"}
@@ -163,7 +164,7 @@ const Footer = () => {
             </a>
             </div>
         </div>
-    </div>
+    </Section>
 }
 
 Footer.displayName = 'Footer';

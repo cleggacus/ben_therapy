@@ -1,25 +1,15 @@
 export default {
     title: "Bens Site",
     description: "Description of site",
-    navbar: {
-        title: "Benjamin Clegg Therapy"
-    },
     cover: {
         title: "Benjamin Clegg Therapy",
     },
-    book_session: {
-        title: "Therapy for people struggling with X, Y and Z",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a rutrum lorem. Nunc finibus pretium elementum. Duis vestibulum aliquet diam, fringilla feugiat velit consequat scelerisque."
-    },
     intro: {
-        title: "Hello and welcome to Dominic French Therapy.",
+        title: "Welcome To Benjamin Clegg Therapy.",
         description: `I can provide you with a safe and secure environment to slow down and take a look within. A place to reflect on and talk about your current situation and past experiences. I am a qualified UKCP accredited psychotherapist and BACP registered counsellor, my approach is integrative meaning that I use my wide theoretical knowledge uniquely with each individual.
 Although we cannot change what has happened, it’s possible to see events differently; no longer being controlled by the past but instead using it as a means of understanding compassionately why the present might look as it does. From here, we can explore how the future could be different.`
     },
     about_me: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed hendrerit nunc. Fusce tincidunt dolor vel euismod pretium. Mauris in mauris sed libero ullamcorper condimentum sit amet sit amet neque. Proin placerat felis purus, eget lacinia diam ultrices eget. Curabitur ultricies diam ipsum, eget efficitur elit mattis non. Integer porttitor porttitor enim eget gravida. Aenean sollicitudin pharetra sapien. Nullam varius fringilla elit ac facilisis. Pellentesque dolor ligula, fringilla non scelerisque ac, varius ac magna.
-
-Donec condimentum tortor eu tortor vestibulum, ut ultricies nulla placerat. Integer vitae elit at sem elementum pretium eu a dui. Morbi ac enim et ante rutrum finibus. Nulla hendrerit tortor lorem, in vulputate sapien tempus a. Proin non mollis risus, facilisis suscipit libero. Sed congue aliquet enim, sit amet commodo mi bibendum id. Vestibulum sit amet lectus vulputate, aliquam mi in, posuere tellus. Donec id congue mauris. Duis sit amet convallis quam. Cras in dolor posuere, tincidunt quam a, faucibus quam. Vivamus risus erat, varius in tempus pulvinar, tempor in tortor. Suspendisse potenti. Nulla ultrices lobortis auctor. Quisque vel libero at magna consequat cursus.
-
 Duis ultricies quis leo ac mollis. Fusce imperdiet maximus nisl, et mattis lacus finibus sit amet. Nam in orci sit amet felis faucibus consectetur. Vivamus eget vulputate ipsum. Proin venenatis risus quis egestas tincidunt. Ut volutpat nibh quis metus porttitor efficitur. Integer nec felis at diam imperdiet scelerisque. Quisque ullamcorper neque a ipsum elementum, quis posuere nisl sagittis. Mauris auctor turpis magna, sit amet convallis metus laoreet a.`,
     why_therapy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed hendrerit nunc. Fusce tincidunt dolor vel euismod pretium. Mauris in mauris sed libero ullamcorper condimentum sit amet sit amet neque. Proin placerat felis purus, eget lacinia diam ultrices eget. Curabitur ultricies diam ipsum, eget efficitur elit mattis non. Integer porttitor porttitor enim eget gravida. Aenean sollicitudin pharetra sapien. Nullam varius fringilla elit ac facilisis. Pellentesque dolor ligula, fringilla non scelerisque ac, varius ac magna.
 

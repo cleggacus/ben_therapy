@@ -9,7 +9,8 @@
 
 .page .seg1 .content img,
 .page .seg2 .content img {
-    width: 40%;
+    max-width: 25rem;
+    width: 100%;
     height: auto; 
 }
 
@@ -24,10 +25,9 @@
 
 .page .footer {
     display: flex;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
     margin: 3rem auto;
 }
 
@@ -37,22 +37,21 @@
 }
 
 .page .footer img {
-    height: 10rem;
-    width: auto;
+    height: auto;
+    max-width: 30rem;
+    width: 100%;
 }
 
 .page .footer .logo {
 }
 
-@media only screen and (max-width: 900px) {
-    .page .seg1 .content img,
-    .page .seg2 .content img {
-        width: 70%;
-        height: auto; 
-    }
-
+@media only screen and (max-width: 1000px) {
     .page .seg1 .content,
     .page .seg2 .content {
+        flex-direction: column;
+    }
+
+    .page .footer {
         flex-direction: column;
     }
 

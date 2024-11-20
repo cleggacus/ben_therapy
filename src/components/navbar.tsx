@@ -18,6 +18,7 @@ type Props = {
 
 export default function Navbar(props: Props) {
     const [open, setOpen] = useState(false);
+
     const scrollTo = (element?: Element) => {
         if(!element) return;
 

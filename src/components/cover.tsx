@@ -6,8 +6,19 @@ import styles from "./cover.module.css"
 import content from "../../content";
 import { ForwardedRef, forwardRef, useEffect, useRef } from 'react';
 
-const Cover = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+type Props = {
+    contact?: Element
+}
+
+const Cover = forwardRef((props: Props, ref: ForwardedRef<HTMLDivElement>) => {
     const imageRef = useRef<HTMLImageElement>(null);
+
+    const scrollTo = (element?: Element) => {
+        if(!element) return;
+
+        const y = element.getBoundingClientRect().top + window.scrollY - 105;
+        window.scrollTo({top: y, behavior: 'smooth'});
+    }
 
     const setTop = (top: number) => {
         if(!imageRef.current) return;
@@ -37,7 +48,7 @@ const Cover = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
 
         <div className={styles.content}>
             <h1>{content.cover.title}</h1>
-            <button>Free Consultation</button>
+            <button onClick={() => scrollTo(props.contact)}>Free Consultation</button>
         </div>
     </div>
 });
