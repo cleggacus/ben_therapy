@@ -137,7 +137,7 @@ const Seg6 = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         <div>
             <p>{`Phone:   ${content.phone}`}</p>
             <p>{`Email: ${content.email}`}</p>
-            <p>{`My practice is in north west London, less than a one minute walk from kensal rise station.`}</p>
+            <p>{`My practice is in North West London, less than a one minute walk from Kensal rise station.`}</p>
             <p>{`I also offer online sessions and telephone counselling.`}</p>
         </div>
     </Section>
