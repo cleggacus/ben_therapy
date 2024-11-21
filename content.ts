@@ -1,62 +1,52 @@
 export default {
     title: "Bens Site",
     description: "Description of site",
+    email: "benjamincleggtherapy@gmail.com",
+    phone: "07506 767178",
     cover: {
         title: "Benjamin Clegg Therapy",
     },
-    intro: {
-        title: "Welcome To Benjamin Clegg Therapy.",
-        description: `I can provide you with a safe and secure environment to slow down and take a look within. A place to reflect on and talk about your current situation and past experiences. I am a qualified UKCP accredited psychotherapist and BACP registered counsellor, my approach is integrative meaning that I use my wide theoretical knowledge uniquely with each individual.
-Although we cannot change what has happened, it’s possible to see events differently; no longer being controlled by the past but instead using it as a means of understanding compassionately why the present might look as it does. From here, we can explore how the future could be different.`
-    },
-    about_me: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed hendrerit nunc. Fusce tincidunt dolor vel euismod pretium. Mauris in mauris sed libero ullamcorper condimentum sit amet sit amet neque. Proin placerat felis purus, eget lacinia diam ultrices eget. Curabitur ultricies diam ipsum, eget efficitur elit mattis non. Integer porttitor porttitor enim eget gravida. Aenean sollicitudin pharetra sapien. Nullam varius fringilla elit ac facilisis. Pellentesque dolor ligula, fringilla non scelerisque ac, varius ac magna.
-Duis ultricies quis leo ac mollis. Fusce imperdiet maximus nisl, et mattis lacus finibus sit amet. Nam in orci sit amet felis faucibus consectetur. Vivamus eget vulputate ipsum. Proin venenatis risus quis egestas tincidunt. Ut volutpat nibh quis metus porttitor efficitur. Integer nec felis at diam imperdiet scelerisque. Quisque ullamcorper neque a ipsum elementum, quis posuere nisl sagittis. Mauris auctor turpis magna, sit amet convallis metus laoreet a.`,
-    why_therapy: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed hendrerit nunc. Fusce tincidunt dolor vel euismod pretium. Mauris in mauris sed libero ullamcorper condimentum sit amet sit amet neque. Proin placerat felis purus, eget lacinia diam ultrices eget. Curabitur ultricies diam ipsum, eget efficitur elit mattis non. Integer porttitor porttitor enim eget gravida. Aenean sollicitudin pharetra sapien. Nullam varius fringilla elit ac facilisis. Pellentesque dolor ligula, fringilla non scelerisque ac, varius ac magna.
-
-Donec condimentum tortor eu tortor vestibulum, ut ultricies nulla placerat. Integer vitae elit at sem elementum pretium eu a dui. Morbi ac enim et ante rutrum finibus. Nulla hendrerit tortor lorem, in vulputate sapien tempus a. Proin non mollis risus, facilisis suscipit libero. Sed congue aliquet enim, sit amet commodo mi bibendum id. Vestibulum sit amet lectus vulputate, aliquam mi in, posuere tellus. Donec id congue mauris. Duis sit amet convallis quam. Cras in dolor posuere, tincidunt quam a, faucibus quam. Vivamus risus erat, varius in tempus pulvinar, tempor in tortor. Suspendisse potenti. Nulla ultrices lobortis auctor. Quisque vel libero at magna consequat cursus.
-
-Duis ultricies quis leo ac mollis. Fusce imperdiet maximus nisl, et mattis lacus finibus sit amet. Nam in orci sit amet felis faucibus consectetur. Vivamus eget vulputate ipsum. Proin venenatis risus quis egestas tincidunt. Ut volutpat nibh quis metus porttitor efficitur. Integer nec felis at diam imperdiet scelerisque. Quisque ullamcorper neque a ipsum elementum, quis posuere nisl sagittis. Mauris auctor turpis magna, sit amet convallis metus laoreet a.`,
-    faq: [
-        {
-            "question": "What is an initial consultation?",
-            "answer": "The initial consultation is for us to talk through what has brought you to therapy and how I might be able to help you. You may well have questions you want to ask and during this time is when we can address these. Finding a good fit with a therapist is very important, this initial consultation is a means of us both seeing how well we could work together to support you in your present situation."
-        },
-        {
-            "question": "Do you offer face to face counselling?",
-            "answer": "I can offer face to face counselling, online sessions via Zoom or telephone counselling."
-        },
-        {
-            "question": "How long does it take?",
-            "answer": "I have found that each individual needs a different amount of time based upon their own process, hopes and aims for therapy.\nI offer short term, long term and open ended therapy - we can discuss your preference during the initial consultation."
-        },
-        {
-            "question": "What is the difference between psychotherapy and counselling?",
-            "answer": "Psychotherapy is typically seen as being more orientated towards longer term, in depth work, whereas counselling is usually seen to be more focused on a particular issue and a shorter time period."
-
-        },
-        {
-            "question": "What can you help me with?",
-            "answer": "I can help you with a wide range of presenting issues, these include but are not limited to: anxiety, trauma, PTSD, addiction, relationships, bereavement, abuse, loss, stress, depression, self-esteem, personal development, life changes and challenges, parenthood, anger, Obsessive Compulsive Disorder (OCD), spirituality, work/career, and sexuality."
-        },
-        {
-            "question": "How often and long are sessions?",
-            "answer": "Sessions are weekly, at the same time and location. Weekly sessions means that there is a certain level of intensity and continuity that I believe is benefical towards the therapeutic endeavour."
-        },
-        {
-            "question": "Do you give advice?",
-            "answer": "I do not give advice or direction; my aim is to work alongside you so that lasting insight comes from within you. I believe that you know yourself best and as such, given the right circumstances you can come to understand your self and individual process better.\nI envision myself as a passenger in a car where you are the driver, together we are looking at your experiences and creating a map, at some points I may well suggest we look down one road or link two towns together, but you are very much in the driving seat."
-        },
-        {
-            "question": "Is everything I say confidential?",
-            "answer": "Yes, the sessions are confidential and I respect this to the highest degree.\nI work under the Ethical Principles and Code of Professional Conduct of the UKCP as well as the BACP who both hold confidentiality as centrally important.\nThe only time that confidentiality might be broken is if you pose a significant risk or harm to yourself or others, or if I am required to do so by law. In either case my aim would be to discuss the breaking of confidentiality with you before wherever possible.\nMy governing bodies (BACP & UKCP) require that my work is supervised by an experienced therapist to ensure that I am working to their regulations and to safeguard clients. Your details are anonymised, and the same degree of confidentiality is maintained within supervision."
-        },
-        {
-            "question": "How much are your fees?",
-            "answer": "Sessions are £55 for 50 minutes. I have some (limited) low cost slots - please make contact for more information."
-        },
-        {
-            "question": "How do I get started?",
-            "answer": "Just contact me"
-        }
-    ]
+    about_me: `I am a trained and experienced psychotherapist who offers a warm, safe and supportive space to explore your past, present and future within a therapeutic relationship that you will feel really seen and heard in.  I am a Registrant Member of the National Counselling and Psychotherapy Society (NCPS) and on their register that has been accredited by the Professional Standards Authority.  I adhere to the NCPS Code of Ethical Practice.
+I offer you a safe space in a world lacking safe spaces for many.
+I have trained in Integrative Psychotherapy and as such use an approach tailored to you, as our relationship emerges for both of us in the sessions. I integrate creativity and play as well as the conventional ideas you may have about therapy.
+At some point in our lives, we all experience feelings of anxiety, sadness, depression, panic or anger. You might think something is intrinsically wrong with you, but you cannot put your finger on it.
+Psychotherapy is one way to explore and understand what you are experiencing and gain insight into how to move forward. I believe the most important aspect of therapy is the quality and depth of the relationship between therapist and client. This ensures effective therapy and can facilitate meaningful change.  I am not a blank canvass or silent observer and so can be authentically with and alongside you as we genuinely work together through your process of change.
+I offer long-term, short-term, online and telephone therapy and work with a range of issues, including but not limited to, anxiety, depression, bereavement, relationship and identity issues.
+A particular interest I hold is in exploring how young adults/adults relate to and define masculinity in a rapidly moving and demanding society. Fluidity in gender and sexuality raise the question; how is it for young men to navigate non-binary and gender fluidity as opposed to the 'Andrew Tate' idea of masculinity?
+I also have an interest in working with trauma and work to provide my clients with the tools to navigate their relationships better and aim to provide a warm, safe environment from which the client can explore their thoughts and feelings in more depth.
+I trained through Middlesex University and Metanoia Institute, one of the leading psychotherapy training institutes in the UK, achieving a Postgraduate Diploma (level 7) in Integrative Psychotherapy.
+I have worked in private practice since 2019 and right now see clients in person at Kensal Rise and via Zoom.
+I have worked in various counselling settings including long-term therapy as well as South London & Maudsley NHS in GP practices delivering short-term referral services.
+I understand engaging with therapy can be intimidating and potentially anxiety inducing. This is why I offer a free 30 min introductory call to empower you to see if we are a good match. Therapist and client is an important relationship and so I will regularly reflect with you on the direction of our therapeutic endeavour.`,
+    fees: `I offer a free 30 minute initial phone consultation - during this call we can go through any questions you might have, and we can explore how I might be able to support you in your journey. I recognise that making the first step is often the hardest, so please feel free to contact me.
+Following on from the initial consultation, we can then arrange a first session. During the first session I will talk and ask more questions than I will in the following sessions. The reason for this is so I can gain a sense of your background, hopes for therapy and ultimately how we can work together to support you in living a fuller life. Should we both feel that there is a good fit then we can plan for future sessions.
+Sessions are 50 minutes in length and are on the same day, at the same time, weekly. Weekly therapy sessions create a certain level of intensity and commitment ensuring counselling is at its most effective.
+The fee for individual therapy is £70 (50 minute session). 
+I do have some (limited) low cost slots available, please contact me for more information.`,
+    areas: [
+        "Anxiety, Stress, Worry",
+        "Self esteem",
+        "Masculinity & Men’s Issues",
+        "Depression",
+        "Trauma",
+        "Addiction",
+        "Intrusive thinking",
+        "Social anxiety",
+        "Relationships issues",
+        "Sexuality",
+        "Bereavement",
+        "Anger",
+        "Loss",
+        "Life changes, challenges and transitions",
+        "Exploring identity, meaning & spirituality",
+        "Career and work issues",
+        "Personal development and growth",
+        "LGBTQ+",
+    ],
+    links: {
+        "contact me": "#contact",
+        "get in touch": "#contact",
+        "national counselling and psychotherapy society": "https://ncps.com",
+        "code of ethical practice": "https://ncps.com/about-us/code-of-ethics",
+    }
 }

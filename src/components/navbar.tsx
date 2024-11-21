@@ -7,8 +7,7 @@ import { useState } from "react";
 export type NavbarElements = {
     home?: Element,
     about_me?: Element,
-    therapy?: Element,
-    faq?: Element,
+    fees?: Element,
     contact?: Element,
 }
 
@@ -33,8 +32,7 @@ export default function Navbar(props: Props) {
         <ul className={open ? styles.open : ""}>
             <li onClick={() => scrollTo(props.elements.home)}>HOME</li>
             <li onClick={() => scrollTo(props.elements.about_me)}>ABOUT ME</li>
-            <li onClick={() => scrollTo(props.elements.therapy)}>THERAPY</li>
-            <li onClick={() => scrollTo(props.elements.faq)}>FAQ</li>
+            <li onClick={() => scrollTo(props.elements.fees)}>FEES</li>
             <li onClick={() => scrollTo(props.elements.contact)}>CONTACT</li>
         </ul>
     </div>
