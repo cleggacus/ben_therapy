@@ -1,6 +1,6 @@
 export default {
-    title: "Bens Site",
-    description: "Description of site",
+    title: "Benjamin Clegg Therapy",
+    description: "I am a trained and experienced psychotherapist who offers a warm, safe and supportive space to explore your past, present and future within a therapeutic relationship that you will feel really seen and heard in.",
     email: "benjamincleggtherapy@gmail.com",
     phone: "07506 767178",
     cover: {
