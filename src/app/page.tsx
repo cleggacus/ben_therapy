@@ -61,7 +61,7 @@ export default function Home() {
 
 const Seg1 = forwardRef((props: { contact?: Element }, ref: ForwardedRef<HTMLDivElement>) => {
     return <Section ref={ref} className={styles.seg1}>
-        <h1>{`Welcome To Benjimin Clegg Therapy`}</h1>
+        <h1>{`Welcome To Benjamin Clegg Therapy`}</h1>
 
         <div className={styles.content}>
             <Image
