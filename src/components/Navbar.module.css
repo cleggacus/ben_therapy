@@ -29,6 +29,11 @@
     float: left;
 }
 
+.container ul li a {
+    color: rgb(var(--fg-nav));
+    text-decoration: none;
+}
+
 .container .icon {
     display: none;
     width: 2.5rem;
