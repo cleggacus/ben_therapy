@@ -8,6 +8,7 @@ import { client } from "../sanity/client";
 
 type Props = {
   title: string,
+  // eslint-disable-next-line
   image: any,
 }
 
