@@ -1,0 +1,53 @@
+.form {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: rgb(var(--bg-form));
+    border-radius: var(--radius);
+    padding: 1.3rem;
+    box-shadow: var(--shadow);
+}
+
+.form form {
+  width: 100%;
+}
+
+.form h1 {
+    margin: 0 0 1rem 0;
+}
+
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+}
+
+.form button,
+.input {
+    margin: 1rem 0;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.error input,
+.error textarea {
+  border: 1px rgb(var(--fg-error)) solid;
+  background-color: rgb(var(--bg-error));
+}
+
+.error .message {
+  margin: 0;
+  color: rgb(var(--fg-error));
+}
+
+.success .message {
+  color: rgb(var(--fg-success));
+}
+
+.status .message {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}

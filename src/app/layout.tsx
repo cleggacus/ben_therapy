@@ -1,21 +1,33 @@
-import type { Metadata } from "next";
+import { SanityDocument } from "next-sanity";
 import "./globals.css";
-import content from "../../content";
+import { client } from "../sanity/client";
+import urlBuilder from '@sanity/image-url'
 
-type Props = Readonly<{
-    children: React.ReactNode;
-}>
+const META_QUERY = `*[_type == "meta"][0]{ title, description, icon }`;
 
-export const metadata: Metadata = {
-    title: content.title,
-    description: content.description,
-};
+const options = { next: { revalidate: 60 } };
 
-export default function RootLayout(props: Props) {
-    return <html lang="en">
-        <body>
-            { props.children }
-        </body>
-    </html>
+export async function generateMetadata() {
+  const meta = await client.fetch<SanityDocument>(META_QUERY, {}, options);
+  const icon = urlBuilder(client).image(meta.icon).url();
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    icons: {
+      icon,
+    },
+  }
 }
 
+type Props = Readonly<{
+  children: React.ReactNode;
+}>
+
+export default function RootLayout(props: Props) {
+  return <html lang="en">
+    <body>
+      {props.children}
+    </body>
+  </html>
+}

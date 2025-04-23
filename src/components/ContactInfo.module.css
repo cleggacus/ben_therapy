@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.container .map {
+    border: 0;
+    flex: 1;
+    width: 100%;
+}
+
+.container > div {
+    max-width: 30rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        height: 40rem;
+    }
+}

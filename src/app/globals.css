@@ -5,8 +5,16 @@
     --bg-nav: 255,255,255;
     --fg-nav: 46,57,58;
 
-    --bg-input: 255,255,255;
-    --fg-input: 46,57,58;
+    --fg-error: 255, 0, 0;
+    --bg-error: 255, 219, 219;
+
+    --fg-success: 70, 219, 53;
+
+    --bg-input: 242,244,247;
+    --fg-input: 0, 0, 0;
+
+    --bg-form: 255,255,255;
+    --fg-form: 0, 0, 0;
 
     --bg-button: 105,108,255;
     --fg-button: 255,255,255;
@@ -14,10 +22,13 @@
     --link-color: 78, 82, 255;
 
     --bg-1: 242,244,247;
-    --fg-1: 46,57,58;
+    --fg-1: 0, 0, 0;
 
     --bg-2: 46,57,58;
     --fg-2: 255,255,255;
+
+    --shadow: 0 0 0.25rem rgba(0, 0, 0, 0.15);
+    --radius: 0.5rem;
 }
 
 html,
@@ -31,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1.08px;
     line-height: 32.4px;
 }
@@ -42,7 +53,7 @@ body {
     font-family: "Poppins", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 1.1em;
+    font-size: 1em;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -66,23 +77,25 @@ a {
 
 input,
 textarea {
-    padding: 15px 20px;
-    font-size: 1.1em;
+    padding: 0.8rem 1.2rem;
+    font-size: 1em;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 300;
     outline: none;
     border: none;
+    border-radius: var(--radius);
     background-color: rgb(var(--bg-input));
     color: rgb(var(--fg-input));
 }
 
 button {
     cursor: pointer;
-    padding: 15px 20px;
-    font-size: 1.1em;
+    padding: 0.8rem 1.2rem;
+    font-size: 1em;
     font-weight: 300;
     outline: none;
     border: none;
+    border-radius: var(--radius);
     background-color: rgb(var(--bg-button));
     color: rgb(var(--fg-button));
 }
